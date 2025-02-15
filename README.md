@@ -1,5 +1,18 @@
 # Monad Task
-![Proje Ekran Görüntüsü](ss/ss.png)
+
+---
+
+![Proje Ekran Görüntüsü](ss/start.png)
+
+--- 
+
+## **Arama işlemi** 
+![Proje Ekran Görüntüsü](ss/arama.gif)
+
+--- 
+
+## **Ekleme işlemi**
+![Proje Ekran Görüntüsü](ss/ekleme.gif)
 ---
 
 ## 1. **Proje Kurulumu ve Vaadin Sayfalarının Oluşturulması**
@@ -48,3 +61,19 @@ Personel View'ini Vaadin üzerinden boş olarak oluşturduktan sonra, aşağıda
 - **Arama Kutusu (Search Box)**: Kullanıcıların personel adlarına göre arama yapabilmesini sağlamak için Vaadin TextField kullanarak bir arama kutusu ekledim.
 
 Vaadin dökümantasyonlarından yararlanarak gerekli Grid ve Arama kutusu bileşenlerini entegre ettim.
+
+---
+
+## 6. **Personel ekleme**
+
+Öncelikle, Vaadin butonunu ekledim ve bir event tanımladım. 
+Bu event sayesinde sabit bir veri ekleyebildim. Ardından, 
+butonun stil özelliklerini değiştirerek istenilen konumda olmasını sağladım.
+
+---
+
+## 7. **Passive View Prensibinin uygulanması**
+Passive View prensibini araştırdım ve View sınıfında verilerin değiştirilmesi, 
+arama gibi işlemlerin olmaması gerektiğini fark ettim. 
+Bu işlemleri tamamen service katmanına taşıdım.
+
