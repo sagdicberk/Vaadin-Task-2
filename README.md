@@ -75,5 +75,22 @@ butonun stil özelliklerini değiştirerek istenilen konumda olmasını sağlad�
 ## 7. **Passive View Prensibinin uygulanması**
 Passive View prensibini araştırdım ve View sınıfında verilerin değiştirilmesi, 
 arama gibi işlemlerin olmaması gerektiğini fark ettim. 
-Bu işlemleri tamamen service katmanına taşıdım.
+Bu işlemleri tamamen service katmanına taşıdım. Ardından daha detaylı bir araştırma yaptığımda
+servis çağrılarının viewde olmaması gerektiğini aracı bir katman ile view elemanlarına atama yapabileceğimi öğrendim.
+PersonelController adında bir presenter(Sunum) classı oluşturdum ve içerinde Getter metodları sayesinde servisten gelen dataProviderı Grid içerine atadım.
+Ardından TextFiel nesnesine serviste bulunan arama methodunu ekledim ekledim. Son olarak da yenile butonuna bir servis metodu atayarak viewdeki tüm servis işlemlerini kaldırdım
+
+--- 
+
+## 8. **View Son Güncelleme**
+öncelikle style ayarlarını tek bir metod olarak yazdım ve constructerı daha temiz hale getirdim.
+Ardından initView Metodunu da ekledim ve çalışıp çalışmadığını kontrol ettim. Herhangi bir hataya rastlamadım. 
+
+
+
+--- 
+
+> **Okuduğunuz için teşekkürler**
+
+
 
