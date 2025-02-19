@@ -1,4 +1,4 @@
-package com.example.application.model.personel.service;
+package com.example.application.service;
 
 import com.example.application.model.personel.Personel;
 import com.vaadin.flow.data.provider.ListDataProvider;
@@ -59,8 +59,9 @@ public class PersonelService {
     }
 
     // arama işlemini de servis katmanında tanımlayarak passive view prensibine uygun hale getirdim.
-    public ListDataProvider<Personel> getPersonelsDataProviderByName(String searchTerm) {
+    // Burada da TextFiel'dan alınan string stream methodları işle arama işlemi yapıyor.
+    public void getPersonelsDataProviderByName(String searchTerm) {
         dataProvider.setFilter(personel -> personel.getAd().toLowerCase().contains(searchTerm.toLowerCase()));
-        return dataProvider;
+
     }
 }
